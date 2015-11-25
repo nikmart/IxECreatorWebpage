@@ -1,7 +1,7 @@
 {
-  "name": "ixe-project-base",
+  "name": "ixe-creator-webpage",
   "version": "0.0.1",
-  "description": "Interaction engine base project",
+  "description": "Interaction engine base project creator web GUI",
   "main": "node server.js",
   "author": "Nik Martelaro <nikmart>",
   "license": "MIT",
@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "express": "^4.13.3",
-    "node-pre-gyp": "0.6.x",
-    "serialport": "^2.0.5",
     "socket.io": "^1.3.7"
   }
 }
