@@ -3,6 +3,7 @@ var http = require('http');
 var app = express();
 var server = http.Server(app);
 var io = require('socket.io')(server);
+var child_process = require('child_process');
 
 // use express to create the simple webapp
 app.use(express.static('public'));
@@ -17,8 +18,11 @@ io.on('connect', function(socket) {
     });
 
     // if you get the 'createProject' message, create a new IxE project
-    socket.on('createProject', function() {
-        console.log('create new project');
+    socket.on('createProject', function(name) {
+        console.log('create new project:', name);
+        //can't get out of the working directory of the project
+        //run the project creator script
+
     });
 
 });
